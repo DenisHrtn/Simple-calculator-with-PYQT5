@@ -1,5 +1,3 @@
-#pip3 install PyQt5
-
 from PyQt5.QtWidgets import QWidget, QApplication,QLabel,QPushButton
 import sys
 
