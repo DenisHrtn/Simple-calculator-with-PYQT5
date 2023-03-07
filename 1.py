@@ -10,7 +10,6 @@ class Calculator(QWidget):
         self.operand = []
         self.operand_2 = []
 
-
     def initUI(self):
         self.setGeometry(350,350,275,370)
         self.setWindowTitle('Калькулятор')
@@ -107,9 +106,6 @@ class Calculator(QWidget):
         self.kv = QPushButton('²', self)
         self.kv.resize(50, 50)
         self.kv.move(220, 210)
-
-
-
 
         self.num_1.clicked.connect(self.one)
         self.num_2.clicked.connect(self.two)
@@ -231,7 +227,6 @@ class Calculator(QWidget):
 
     def clean(self):
         self.label.setText('')
-
 
 
 if __name__ == '__main__':
