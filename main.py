@@ -5,14 +5,14 @@ import sys
 class Calculator(QWidget):
     def __init__(self):
         super().__init__()
-        self.initUI()
+        self.init_ui()
         self.my_input = []
         self.operand = []
         self.operand_2 = []
 
-    def initUI(self):
-        self.setGeometry(350,350,275,370)
-        self.setWindowTitle('Калькулятор')
+    def init_ui(self):
+        self.setGeometry(350, 350, 275, 370)
+        self.setWindowTitle("Калькулятор")
 
         self.label = QLabel(self)
         self.label.setText('0')
@@ -126,7 +126,7 @@ class Calculator(QWidget):
         self.ravn.clicked.connect(self.ravno)
         self.c.clicked.connect(self.clean)
 
-    def enterValue(self):
+    def enter_value(self):
         if self.label.text() == 0:
             self.label.setText('')
         self.label.setText(self.label.text() + self.my_input)
